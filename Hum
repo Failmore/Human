@@ -1,0 +1,126 @@
+#ifndef HUMAN_H_
+#define HUMAN_H_
+
+#include <string>
+using namespace std;
+
+class Human {
+
+	private:
+
+		int age;
+		string name;
+		string phrase;
+
+
+
+	public:
+
+		Human();
+		Human(int, string, string);
+		int getAge();
+		void setName(string);
+		void setPhrase(string);
+		string getName();
+		string getPhrase();
+
+};
+
+
+
+#endif /* HUMAN_H_ */
+///////////////////
+Human.cpp
+#include "Human.h"
+#include <string>
+
+using namespace std;
+
+		Human::Human(){
+			name = "John";
+			age = 0;
+			phrase = "Test";
+		}
+		Human::Human(int a, string n, string p){
+			age = a;
+			name = n;
+			phrase = p;
+
+
+		}
+		int Human::getAge(){
+			return age;
+			age++;
+		}
+		string Human::getName(){
+			return name;
+			age++;
+
+		}
+		string Human::getPhrase(){
+			return phrase;
+			age++;
+
+		}
+
+		void Human::setName(string n){
+				name = n;
+				age++;
+			}
+			//void
+			void Human::setPhrase(string p){
+				phrase = p;
+				age++;
+			}
+//////////
+Driver.cpp
+
+#include <iostream>
+#include <string>
+#include "Human.h"
+
+
+using namespace std;
+
+int main() {
+
+	int h;
+
+	Human humans();
+
+
+
+		string name;
+		string phrase;
+
+		phrase = getPhrase();
+
+	cout << "How many humans will be created?" ;
+	cin >> h;
+
+	humans[h];
+
+	int i;
+
+	for(i=0; i<h; i++){
+		cout << "Enter name: ";
+		cin >> name;
+		cout << "Phrase: ";
+		cin >> phrase;
+
+	//	humans[i].setName(name);
+	//	humans[i].setPhrase(phrase);
+
+
+	}
+	getAge();
+
+	for(i=0; i<h; i++){
+	//	cout << "Human: " << humans[i].getName();
+	//	cout << "Phrase: " << humans[i].getPhrase() << endl;
+	//	cout << "Age: " << humans[i].getAge();
+
+	}
+
+	return 0;
+}
